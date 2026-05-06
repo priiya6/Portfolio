@@ -249,9 +249,9 @@ section{min-height:100vh;padding:96px 80px;display:flex;flex-direction:column;ju
 
 /* ── ABOUT ── */
 #about{background:var(--bg2);}
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;}
-.about-info-table{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;}
-.about-row{display:flex;padding:13px 20px;border-bottom:1px solid var(--border);transition:background .18s;}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;align-items: stretch;}
+.about-info-table{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;height: 100%;}
+.about-row{display:flex;flex: 1;padding:13px 20px;border-bottom:1px solid var(--border);transition:background .18s;}
 .about-row:last-child{border-bottom:none;}
 .about-row:hover{background:rgba(124,106,247,.04);}
 .about-key{font-family:'JetBrains Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:1px;color:var(--text3);min-width:110px;padding-top:1px;font-weight:500;}
@@ -372,7 +372,7 @@ section{min-height:100vh;padding:96px 80px;display:flex;flex-direction:column;ju
   <div class="nav-logo">
     <div class="nav-logo-initials">PG</div>
     <div class="nav-logo-name">Priya Gaglani</div>
-    <div class="nav-logo-role">Backend · Full-Stack · AI · Cybersecurity</div>
+    <div class="nav-logo-role">Backend · Full-Stack · Software · AI / ML · Cybersecurity</div>
   </div>
   <div class="nav-divider"></div>
   <div class="nav-links">
@@ -408,22 +408,25 @@ section{min-height:100vh;padding:96px 80px;display:flex;flex-direction:column;ju
 
   <div class="hero-eyebrow fade-up">
     <div class="hero-eyebrow-line"></div>
-    <div class="hero-eyebrow-text">B.Tech Computer Engineering · CGPA 8.59 · SAKEC Mumbai</div>
+    <div class="hero-eyebrow-text">B.Tech Computer Engineering · Honors in Cybersecurity · CGPA 8.59 · SAKEC Mumbai</div>
   </div>
 
   <h1 class="hero-name fade-up d1">
-    Priya<br><span class="hero-name-bold">Gaglani.</span>
+    Priya  <span class="hero-name-bold">Gaglani.</span>
   </h1>
 
   <p class="hero-subtitle fade-up d2">
-    <strong>Backend Developer</strong> · <strong>Software Developer</strong> · <strong>Full-Stack Developer</strong> — crafting scalable, secure, production-grade systems from Mumbai, India.
+  <br><strong>Backend Developer </strong> · <strong>Software Developer </strong> · <strong>Full-Stack Developer </strong> <br> - crafting scalable, secure, production-grade systems.
   </p>
 
   <div class="hero-pills fade-up d2">
-    <span class="hero-pill p1">React · Node · TypeScript</span>
-    <span class="hero-pill p2">Cybersecurity · Django · AWS</span>
-    <span class="hero-pill p3">AI / ML · IBM SkillsBuild</span>
-    <span class="hero-pill p4">Android · Docker · PostgreSQL</span>
+    <span class="hero-pill p1">TypeScript · Node.js · Express </span>
+    <span class="hero-pill p2">PostgreSQL · Prisma · Docker · Redis</span>
+    <span class="hero-pill p3">React 18 · REST APIs · Cybersecurity · RBAC </span>
+    <span class="hero-pill p4">JWT Auth · AWS · Cloud </span>
+    <span class="hero-pill p5">Python · Django · MySQL </span>
+    <span class="hero-pill p3">MongoDB · Git · GitHub </span>
+    <span class="hero-pill p4">C++ · Java · AI / ML · Android </span>
   </div>
 
   <div class="hero-stats fade-up d3">
@@ -437,10 +440,10 @@ section{min-height:100vh;padding:96px 80px;display:flex;flex-direction:column;ju
   <div class="hero-ctas fade-up d4">
     <a href="#projects" class="btn-accent">View Projects →</a>
     <a href="#contact" class="btn-outline">Get In Touch</a>
-    <a href="https://github.com/PriyaaGaglani" target="_blank" class="btn-outline">GitHub ↗</a>
+    <a href="https://github.com/PriyaaGaglani" target="_blank" class="btn-outline">PriyaaGaglani GitHub ↗</a>
+    <a href="https://github.com/priiya6" target="_blank" class="btn-outline">priiya6 GitHub ↗</a>
   </div>
 
-  <div class="hero-scroll"><div class="hero-scroll-line"></div><div class="hero-scroll-text">Scroll to explore</div></div>
 </section>
 
 <!-- ── PROJECTS ── -->
@@ -462,34 +465,20 @@ section{min-height:100vh;padding:96px 80px;display:flex;flex-direction:column;ju
       <a href="https://github.com/priiya6/Ledgr" target="_blank" class="proj-link">View on GitHub ↗</a>
     </div>
 
-    <!-- 02 Convo ChatApp -->
-    <div class="project-card featured card-glow fade-up d1">
-    <div class="proj-num">02</div>
-      <div class="project-badges">
-        <span class="badge live">Full-Stack</span>
-        <span class="badge mobile">Android APK</span>
-        <span class="badge fs">Realtime</span>
-      </div>
-      <div class="project-header">
-        <div>
-          <div class="project-title">Convo — Real-Time Chat App</div>
-          <div class="project-sub">React + Supabase + Capacitor · Internship Assessment Delivery</div>
-        </div>
-      <p class="project-desc">Production-grade real-time messaging app with Supabase Auth (JWT), PostgreSQL database, Supabase Realtime via Postgres CDC for live messages, Supabase Broadcast for typing indicators, optimistic UI for instant message display, Row Level Security at the database level, skeleton loaders, and packaged as an Android APK with Capacitor.</p>
-      <div class="project-stack">
-        <span class="stack-tag">React 18</span><span class="stack-tag">Vite</span><span class="stack-tag">Supabase Auth</span><span class="stack-tag">PostgreSQL</span><span class="stack-tag">Supabase Realtime</span><span class="stack-tag">Capacitor</span><span class="stack-tag">RLS</span><span class="stack-tag">React Router</span>
-      </div>
-      <div class="project-links">
-        <a href="https://github.com/priiya6/ChatApp" target="_blank" class="proj-link">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-          View on GitHub
-        </a>
-      </div>
+      <!-- 02 Convo ChatApp -->
+      <div class="proj-card featured card-glow fade-up">
+        <div class="proj-num">02</div>
+        <div class="proj-badges"><span class="proj-badge new">Full-Stack</span><span class="proj-badge featured-badge">Android APK</span><span class="proj-badge new">Realtime</span></div>
+        <div class="proj-title">Convo — Real-Time Chat App</div>
+        <div class="proj-sub">React · Supabase · Capacitor</div>
+        <div class="proj-desc">Production-grade real-time messaging app with Supabase Auth (JWT), PostgreSQL database, Supabase Realtime via Postgres CDC for live messages, Supabase Broadcast for typing indicators, optimistic UI for instant message display, Row Level Security at the database level, skeleton loaders, and packaged as an Android APK with Capacitor.</div>
+        <div class="proj-stack"><span class="proj-tech">React 18</span><span class="proj-tech">Vite</span><span class="proj-tech">Supabase Auth</span><span class="proj-tech">PostgreSQL</span><span class="proj-tech">Supabase Realtime</span><span class="proj-tech">Capacitor</span><span class="proj-tech">RLS</span><span class="proj-tech">React Router</span></div>
+        <a href="https://github.com/priiya6/ChatApp" target="_blank" class="proj-link">View on GitHub ↗</a>
     </div>
 
-    
+
     <!-- 03 TravelVista -->
-    <div class="proj-card card-glow fade-up d2">
+    <div class="proj-card card-glow fade-up d1">
       <div class="proj-num">03</div>
       <div class="proj-badges"><span class="proj-badge featured-badge">Full-Stack</span><span class="proj-badge new">Live</span></div>
       <div class="proj-title">TravelVista — Travel Booking Platform</div>
@@ -517,19 +506,20 @@ section{min-height:100vh;padding:96px 80px;display:flex;flex-direction:column;ju
       <div class="proj-sub">NGO Platform · Apr – May 2025</div>
       <div class="proj-desc">Web-based platform streamlining NGO food donation and delivery operations. MySQL-backed data management, CSV export reporting, and pandas/matplotlib analytics dashboards for visualizing donation trends over time.</div>
       <div class="proj-stack"><span class="proj-tech">Python</span><span class="proj-tech">Django</span><span class="proj-tech">Streamlit</span><span class="proj-tech">MySQL</span><span class="proj-tech">Pandas</span><span class="proj-tech">Matplotlib</span></div>
+      <a href="https://github.com/PriyaaGaglani/food-donation-tracker" target="_blank" class="proj-link">View on GitHub ↗</a>
     </div>
 
-    <!-- 06 Graphical Auth — full-width, same grid height -->
-    <div class="proj-card full-width fade-up d3">
-      <div class="proj-full-left">
-        <div class="proj-num">06</div>
-        <div class="proj-badges"><span class="proj-badge security">Security</span><span class="proj-badge featured-badge">Research PoC</span></div>
-        <div class="proj-title">Graphical Authentication System</div>
+    <!-- 06 Graphical Auth -->
+    <div class="proj-card fade-up d3">
+      <div class="proj-num">06</div>
+      <div class="proj-badges"><span class="proj-badge security">Security</span><span class="proj-badge featured-badge">Research PoC</span></div>
+      <div class="proj-title">Graphical Authentication System</div>
         <div class="proj-sub">Steganography · Novel Security · Apr 2025</div>
         <div class="proj-desc">Proof-of-concept replacing passwords with image-based graphical login. Integrated steganography to securely embed and retrieve credentials within images — a forward-thinking approach to visual security and passwordless authentication.</div>
         <div class="proj-stack"><span class="proj-tech">Python</span><span class="proj-tech">MongoDB</span><span class="proj-tech">Steganography</span><span class="proj-tech">Security</span></div>
+        <a href="https://github.com/paartth6/GraphicalAuth-master" target="_blank" class="proj-link">View on GitHub ↗</a>
       </div>
-      </div>
+  </div>
 </section>
 
 <!-- ── INTERNSHIPS ── -->
@@ -709,6 +699,7 @@ section{min-height:100vh;padding:96px 80px;display:flex;flex-direction:column;ju
     <div class="sec-tag">About Me</div>
     <div class="sec-title">Priya's <em>Journey</em></div>
   </div>
+
   <div class="about-grid">
     <div class="fade-up">
       <div class="about-info-table">
@@ -717,24 +708,32 @@ section{min-height:100vh;padding:96px 80px;display:flex;flex-direction:column;ju
         <div class="about-row"><span class="about-key">Phone</span><span class="about-val">+91 7400422719</span></div>
         <div class="about-row"><span class="about-key">LinkedIn</span><span class="about-val"><a href="https://linkedin.com" target="_blank">linkedin.com/in/priyagaglani</a></span></div>
         <div class="about-row"><span class="about-key">GitHub</span><span class="about-val"><a href="https://github.com/PriyaaGaglani" target="_blank">github.com/PriyaaGaglani</a></span></div>
+        <div class="about-row"><span class="about-key">Second GitHub</span><span class="about-val"><a href="https://github.com/priiya6" target="_blank">github.com/priiya6</a></span></div>
         <div class="about-row"><span class="about-key">LeetCode</span><span class="about-val"><a href="https://leetcode.com" target="_blank">leetcode.com/priyagaglani</a></span></div>
       </div>
     </div>
+
+        <div class="about-right fade-up d1">
+      <div class="edu-card">
+        <div class="edu-card-title">K J Somaiya College of Science and Commerce</div>
+        <div class="edu-card-sub">Bifocal Computer Science · 2021 – 2023</div>
+      </div>
+
     <div class="about-right fade-up d1">
       <div class="edu-card">
         <div class="edu-card-title">Shah &amp; Anchor Kutchhi Engineering College</div>
         <div class="edu-card-sub">B.Tech Computer Science · Chembur, Mumbai · August 2023 – Present</div>
-        <div class="edu-card-cgpa">CGPA: 8.59</div>
+        <br><div class="edu-card-cgpa">CGPA: 8.59</div>
+        <br><div class="edu-card-cgpa">Honors: Cybersecurity</div>
       </div>
+
       <div class="about-right fade-up d1">
         <div class="sw-card str">
           <div class="sw-head">💪 Strengths</div>
           <div class="sw-tags"><span class="sw-t">Problem Solving</span><span class="sw-t">Fast Learner</span><span class="sw-t">Leadership</span><span class="sw-t">Team Player</span><span class="sw-t">Detail-Oriented</span><span class="sw-t">Creative</span><span class="sw-t">Public Speaking</span><span class="sw-t">Perfectionism</span></div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+
+ </section>
 
 <!-- ── MEMBERSHIPS ── -->
 <section id="memberships">
@@ -864,10 +863,11 @@ section{min-height:100vh;padding:96px 80px;display:flex;flex-direction:column;ju
       <a href="tel:+917400422719" class="contact-link"><div class="cl-icon">📱</div><div><div class="cl-label">Phone</div><div class="cl-val">+91 7400422719</div></div></a>
       <a href="https://linkedin.com" target="_blank" class="contact-link"><div class="cl-icon">💼</div><div><div class="cl-label">LinkedIn</div><div class="cl-val">linkedin.com/in/priyagaglani</div></div></a>
       <a href="https://github.com/PriyaaGaglani" target="_blank" class="contact-link"><div class="cl-icon">🐙</div><div><div class="cl-label">GitHub</div><div class="cl-val">github.com/PriyaaGaglani</div></div></a>
+      <a href="https://github.com/priiya6" target="_blank" class="contact-link"><div class="cl-icon">🐙</div><div><div class="cl-label">Second GitHub</div><div class="cl-val">github.com/priiya6</div></div></a>
       <a href="https://leetcode.com" target="_blank" class="contact-link"><div class="cl-icon">🧩</div><div><div class="cl-label">LeetCode</div><div class="cl-val">leetcode.com/priyagaglani</div></div></a>
     </div>
   </div>
-  <div class="footer-copy">© 2026 PRIYA GAGLANI · BUILT WITH ♥ · MUMBAI, INDIA</div>
+  <div class="footer-copy">© PRIYA GAGLANI</div>
 </section>
 
 </main>
