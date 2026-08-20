@@ -425,7 +425,8 @@ section{min-height:100vh;padding:96px 80px;display:flex;flex-direction:column;ju
     <span class="hero-pill p3">React 18 · REST APIs · Cybersecurity · RBAC </span>
     <span class="hero-pill p4">JWT Auth · AWS · Cloud </span>
     <span class="hero-pill p5">Python · Django · MySQL </span>
-    <span class="hero-pill p3">MongoDB · Git · GitHub </span>
+    <span class="hero-pill p3">LangChain · FashionCLIP · FAISS · AI Agents</span>
+    <span class="hero-pill p2">MongoDB · Git · GitHub </span>
     <span class="hero-pill p4">C++ · Java · AI / ML · Android </span>
   </div>
 
@@ -477,9 +478,21 @@ section{min-height:100vh;padding:96px 80px;display:flex;flex-direction:column;ju
     </div>
 
 
-    <!-- 03 TravelVista -->
-    <div class="proj-card card-glow fade-up d1">
+     <!-- 03 TailorTalk -->
+    <div class="proj-card featured card-glow fade-up d1">
       <div class="proj-num">03</div>
+      <div class="proj-badges"><span class="proj-badge featured-badge">AI Agent</span><span class="proj-badge new">LangChain</span></div>
+      <div class="proj-title">TailorTalk — AI-Powered Visual Similarity Search Agent</div>
+      <div class="proj-sub">Agentic Tool-Calling · Live Deployment · Vector Search</div>
+      <div class="proj-desc">AI shopping agent that finds visually similar sarees from a single image. A LangChain agent detects similarity-search intent and invokes a custom typed tool: FashionCLIP generates image embeddings, FAISS IndexFlatIP retrieves the top 25 candidates via cosine similarity, and an HSV color-similarity reranker (0.7 embedding + 0.3 color) sharpens results for fine-grained matching within a single-category catalogue. Supports both image upload and HTTP(S) URL input, with a fallback CLIP model and local intent classifier so search works even without an LLM API key.</div>
+      <div class="proj-stack"><span class="proj-tech">LangChain</span><span class="proj-tech">FashionCLIP</span><span class="proj-tech">FAISS</span><span class="proj-tech">Hugging Face Transformers</span><span class="proj-tech">Streamlit</span><span class="proj-tech">Python</span><span class="proj-tech">Vector Search</span><span class="proj-tech">Pydantic</span></div>
+      <a href="https://github.com/priiya6/Backend" target="_blank" class="proj-link">View on GitHub ↗</a>
+      <a href="https://tailortalk-priya.streamlit.app/" target="_blank" class="proj-link">Live Demo ↗</a>
+    </div>
+    
+    <!-- 04 TravelVista -->
+    <div class="proj-card card-glow fade-up d2">
+      <div class="proj-num">04</div>
       <div class="proj-badges"><span class="proj-badge featured-badge">Full-Stack</span><span class="proj-badge new">Live</span></div>
       <div class="proj-title">TravelVista — Travel Booking Platform</div>
       <div class="proj-sub">End-to-End Web App · Admin Panel · Payment Simulation</div>
@@ -488,9 +501,9 @@ section{min-height:100vh;padding:96px 80px;display:flex;flex-direction:column;ju
       <a href="https://github.com/PriyaaGaglani/TravelVistaa" target="_blank" class="proj-link">View on GitHub ↗</a>
     </div>
 
-    <!-- 04 ParkEase -->
-    <div class="proj-card card-glow fade-up d2">
-      <div class="proj-num">04</div>
+    <!-- 05 ParkEase -->
+    <div class="proj-card card-glow fade-up d3">
+      <div class="proj-num">05</div>
       <div class="proj-badges"><span class="proj-badge smart-city">Smart City</span><span class="proj-badge featured-badge">Middleware</span></div>
       <div class="proj-title">ParkEase — Smart Parking System</div>
       <div class="proj-sub">Distributed Architecture · JMS · IoT-Inspired</div>
@@ -498,9 +511,9 @@ section{min-height:100vh;padding:96px 80px;display:flex;flex-direction:column;ju
       <div class="proj-stack"><span class="proj-tech">Java Servlets</span><span class="proj-tech">JSP</span><span class="proj-tech">JMS</span><span class="proj-tech">MySQL</span><span class="proj-tech">GlassFish</span><span class="proj-tech">HTML/CSS/JS</span></div>
     </div>
 
-    <!-- 05 Food Donation -->
+    <!-- 06 Food Donation -->
     <div class="proj-card fade-up d3">
-      <div class="proj-num">05</div>
+      <div class="proj-num">06</div>
       <div class="proj-badges"><span class="proj-badge new">Social Impact</span></div>
       <div class="proj-title">Food Donation &amp; Distribution Tracker</div>
       <div class="proj-sub">NGO Platform · Apr – May 2025</div>
@@ -509,9 +522,9 @@ section{min-height:100vh;padding:96px 80px;display:flex;flex-direction:column;ju
       <a href="https://github.com/PriyaaGaglani/food-donation-tracker" target="_blank" class="proj-link">View on GitHub ↗</a>
     </div>
 
-    <!-- 06 Graphical Auth -->
+    <!-- 07 Graphical Auth -->
     <div class="proj-card fade-up d3">
-      <div class="proj-num">06</div>
+      <div class="proj-num">07</div>
       <div class="proj-badges"><span class="proj-badge security">Security</span><span class="proj-badge featured-badge">Research PoC</span></div>
       <div class="proj-title">Graphical Authentication System</div>
         <div class="proj-sub">Steganography · Novel Security · Apr 2025</div>
@@ -609,6 +622,11 @@ section{min-height:100vh;padding:96px 80px;display:flex;flex-direction:column;ju
     <div class="skill-card fade-up">
       <div class="skill-card-head"><span class="skill-card-icon">🎨</span><span class="skill-card-title">Frameworks</span></div>
       <div class="stags"><span class="stag fw">ReactJS</span><span class="stag fw">TailwindCSS</span><span class="stag fw">Streamlit</span><span class="stag fw">UI/UX</span><span class="stag fw">React Router</span><span class="stag fw">Capacitor</span><span class="stag fw">Zod</span></div>
+    </div>
+    <div class="skills-hero-row">
+    <div class="skill-card fade-up">
+      <div class="skill-card-head"><span class="skill-card-icon">🤖</span><span class="skill-card-title">AI / ML</span></div>
+      <div class="stags"><span class="stag ai">LangChain</span><span class="stag ai">FashionCLIP</span><span class="stag ai">Hugging Face Transformers</span><span class="stag ai">FAISS</span><span class="stag ai">AI Agents</span><span class="stag ai">Embeddings</span><span class="stag ai">Vector Search</span></div>
     </div>
     <div class="skill-card fade-up d1">
       <div class="skill-card-head"><span class="skill-card-icon">🔒</span><span class="skill-card-title">Domains &amp; Interests</span></div>
