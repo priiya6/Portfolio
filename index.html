@@ -484,10 +484,12 @@ section{min-height:100vh;padding:96px 80px;display:flex;flex-direction:column;ju
       <div class="proj-badges"><span class="proj-badge featured-badge">AI Agent</span><span class="proj-badge new">LangChain</span></div>
       <div class="proj-title">TailorTalk — AI-Powered Visual Similarity Search Agent</div>
       <div class="proj-sub">Agentic Tool-Calling · Live Deployment · Vector Search</div>
-      <div class="proj-desc">AI shopping agent that finds visually similar sarees from a single image. A LangChain agent detects similarity-search intent and invokes a custom typed tool: FashionCLIP generates image embeddings, FAISS IndexFlatIP retrieves the top 25 candidates via cosine similarity, and an HSV color-similarity reranker (0.7 embedding + 0.3 color) sharpens results for fine-grained matching within a single-category catalogue. Supports both image upload and HTTP(S) URL input, with a fallback CLIP model and local intent classifier so search works even without an LLM API key.</div>
+      <div class="proj-desc">AI shopping agent that finds visually similar sarees from a single image. A LangChain agent invokes a custom tool: FashionCLIP embeddings, FAISS cosine search over 25 candidates, then HSV color reranking for fine-grained matching. Supports image upload or URL input, with offline fallback.</div>
       <div class="proj-stack"><span class="proj-tech">LangChain</span><span class="proj-tech">FashionCLIP</span><span class="proj-tech">FAISS</span><span class="proj-tech">Hugging Face Transformers</span><span class="proj-tech">Streamlit</span><span class="proj-tech">Python</span><span class="proj-tech">Vector Search</span><span class="proj-tech">Pydantic</span></div>
-      <a href="https://github.com/priiya6/Backend" target="_blank" class="proj-link">View on GitHub ↗</a>
-      <a href="https://tailortalk-priya.streamlit.app/" target="_blank" class="proj-link">Live Demo ↗</a>
+      <div class="proj-links">
+        <a href="https://github.com/priiya6/Backend" target="_blank" class="proj-link">View on GitHub ↗</a>
+        <a href="https://tailortalk-priya.streamlit.app/" target="_blank" class="proj-link">Live Demo ↗</a>
+      </div>
     </div>
     
     <!-- 04 TravelVista -->
@@ -623,19 +625,20 @@ section{min-height:100vh;padding:96px 80px;display:flex;flex-direction:column;ju
       <div class="skill-card-head"><span class="skill-card-icon">🎨</span><span class="skill-card-title">Frameworks</span></div>
       <div class="stags"><span class="stag fw">ReactJS</span><span class="stag fw">TailwindCSS</span><span class="stag fw">Streamlit</span><span class="stag fw">UI/UX</span><span class="stag fw">React Router</span><span class="stag fw">Capacitor</span><span class="stag fw">Zod</span></div>
     </div>
-    <div class="skills-hero-row">
-    <div class="skill-card fade-up">
+       <div class="skill-card fade-up d2">
       <div class="skill-card-head"><span class="skill-card-icon">🤖</span><span class="skill-card-title">AI / ML</span></div>
-      <div class="stags"><span class="stag ai">LangChain</span><span class="stag ai">FashionCLIP</span><span class="stag ai">Hugging Face Transformers</span><span class="stag ai">FAISS</span><span class="stag ai">AI Agents</span><span class="stag ai">Embeddings</span><span class="stag ai">Vector Search</span></div>
+      <div class="stags"><span class="stag lang">LangChain</span><span class="stag lang">FashionCLIP</span><span class="stag lang">Hugging Face Transformers</span><span class="stag lang">FAISS</span><span class="stag lang">AI Agents</span><span class="stag lang">Embeddings</span><span class="stag lang">Vector Search</span></div>
     </div>
-    <div class="skill-card fade-up d1">
+    </div>
+      <div class="skills-row">
+       <div class="skill-card fade-up">
       <div class="skill-card-head"><span class="skill-card-icon">🔒</span><span class="skill-card-title">Domains &amp; Interests</span></div>
       <div class="stags"><span class="stag default">Backend Development</span><span class="stag default">software Development</span><span class="stag default">AI / ML</span><span class="stag default">Full Stack Development</span><span class="stag default">CyberSecurity</span><span class="stag default">Cloud</span><span class="stag default">Distributed Systems</span><span class="stag default">Android Dev</span></div>
     </div>
-  </div>
-  <div class="skill-card fade-up" style="margin-top:16px;">
+  <div class="skill-card fade-up d2">
     <div class="skill-card-head"><span class="skill-card-icon">🎭</span><span class="skill-card-title">Soft Skills &amp; Talents</span></div>
     <div class="stags"><span class="stag soft">Leadership</span><span class="stag soft">Communication</span><span class="stag soft">Time Management</span><span class="stag soft">Team Collaboration</span><span class="stag soft">Design Thinking</span><span class="stag soft">Dance &amp; Performing Arts</span></div>
+  </div>
   </div>
 </section>
 
